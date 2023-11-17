@@ -3,7 +3,8 @@
 #include "main.h"
 #include <math.h>
 
-double calculateSinPosition(sfClock* clock) 
+double calculateSinPosition(
+    sfClock* clock) 
 {
     sfTime t = sfClock_getElapsedTime(clock);
     double x = sfTime_asSeconds(t);

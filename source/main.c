@@ -13,6 +13,7 @@ int main()
 
     //variable declarations
     sfCircleShape* circle = MODcircleshape();
+    sfRectangleShape* line = MODrectLine();
     
 
     while (sfRenderWindow_isOpen(window)) 
@@ -27,10 +28,10 @@ int main()
 
         updateCirclePosition(circle, clock);
 
-        render(window, circle);
+        render(window, circle, line);
     }
 
-    destroyRender(window, circle, clock);
+    destroyRender(window, circle, clock, line);
 
     return 0;
 }

@@ -13,7 +13,9 @@ sfCircleShape* MODcircleshape()
     return circle;
 }
 
-void updateCirclePosition(sfCircleShape* circle, sfClock* clock) 
+void updateCirclePosition(
+    sfCircleShape* circle, 
+    sfClock* clock) 
 {
     double sinpos = calculateSinPosition(clock);
 
